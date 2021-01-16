@@ -25,9 +25,29 @@
 	"permissions":
 	[
 		"declarativeContent"
-	],
+  ],
+  // 会一直常驻的后台JS或后台页面
 	"background":
 	{
+    // 2种指定方式，如果指定JS，那么会生成1个背景页
+    // 访问chrome后台页面：chrome-extension://<extension-id>/background.html
+    // "page": "background.html",
 		"scripts": ["js/background.js"]
-	}
+  }
+  // 即使不设置该选项，依然可以通过chrome-extension://<extension-id>/js/inject.js访问
+	// "web_accessible_resources": 
+	// [
+	// 	"js/inject.js"
+  // ],
+  // Manifest v2
+  // "web_accessible_resources": [
+    //   <files>
+  // ]
+  // Manifest v3
+  // "web_accessible_resources": [{
+  //   "resources": [<resources>],
+  //   "matches": [<urls>],
+  //   "extension_ids": [<keys>],
+  //   optional "use_dynamic_url": boolean
+  // }]
 }

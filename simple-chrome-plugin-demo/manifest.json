@@ -4,8 +4,7 @@
 	"version": "1.0",
 	"description": "最简单的Chrome插件demo，需要快速做一个简单的插件时可以基于这个仓库开发",
 	"author": "sxei",
-	"icons":
-	{
+	"icons": {
 		"48": "icon.png",
 		"128": "icon.png"
 	},
@@ -17,12 +16,9 @@
 	"content_scripts": 
 	[
 		{
+      // 通过配置的方式轻松向指定页面注入JS和CSS
 			"matches": ["https://www.baidu.com/*"],
 			"js": ["content-script.js"]
 		}
-	],
-	"web_accessible_resources": 
-	[
-		"inject.js"
-	]
+  ]
 }

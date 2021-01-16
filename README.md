@@ -1,3 +1,6 @@
+<!-- site:developer.chrome.com -->
+<!-- time:最近一年 -->
+<!-- keyword:web_accessible_resources -->
 # 写在前面
 
 我花了将近一个多月的时间断断续续写下这篇博文，并精心写下完整demo，所以转载务必保留 http://blog.haoji.me/chrome-plugin-develop.html 。本文所有涉及到的大部分代码均在这个demo里面：https://github.com/sxei/chrome-plugin-demo ，大家可以直接下载下来运行。
